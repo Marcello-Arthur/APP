@@ -20,3 +20,16 @@ constantes
 ## Operadores
 
 Operadores de atribuição de valores
+Operador de concatenação
+
+## Estrutura de Dados
+
+## Arrays
+
+uma lista que contem qualquer tipo de dados
+
+## Objetos
+
+Metodos e Atributos
+Criação e Manipulação de objetos
+Acesso a propiedades de objetos
