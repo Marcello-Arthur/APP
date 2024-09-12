@@ -37,3 +37,7 @@ Acesso a propiedades de objetos
 ## Estrutura de repetição
 
 While
+
+## Condicionais
+
+Switch
