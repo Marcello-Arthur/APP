@@ -33,3 +33,7 @@ uma lista que contem qualquer tipo de dados
 Metodos e Atributos
 Criação e Manipulação de objetos
 Acesso a propiedades de objetos
+
+## Estrutura de repetição
+
+While
