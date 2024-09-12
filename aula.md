@@ -36,6 +36,7 @@ operadores de comparação ( ==, !=, <= >= < >)
 ## Arrays
 
 uma lista que contem qualquer tipo de dados
+metodos de array: push, find e foreach
 
 ## Objetos
 
