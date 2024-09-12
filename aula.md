@@ -30,6 +30,7 @@ constantes
 Operadores de atribuição de valores =
 Operador de concatenação +
 operadores de comparação ( ==, !=, <= >= < >)
+spreed operator: ...
 
 ## Estrutura de Dados
 
