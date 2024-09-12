@@ -7,6 +7,14 @@ Como um lego, você vai utilizar peças para criar algoritmos, ou seja, para res
 
 ## Peças de uma liguagem 
 
+Comentarios
+declarações de variaveis (let e const)
+operadores (Concatenação, ,atematicos, comparação, atribuição, logicos ) 
+tipos de dados (String, number, boolean)
+estrutura de dados (functions, object e arrays)
+controle de fluxo (if/else)
+estrutura de repetição (for e while)
+
 ## Escopo e Variaveis
 
 Variaveis locais e globais
@@ -19,8 +27,9 @@ constantes
 
 ## Operadores
 
-Operadores de atribuição de valores
-Operador de concatenação
+Operadores de atribuição de valores =
+Operador de concatenação +
+operadores de comparação ( ==, !=, <= >= < >)
 
 ## Estrutura de Dados
 
@@ -41,6 +50,7 @@ While
 ## Condicionais
 
 Switch
+If/Else
 
 ## Modulos em Nodes.js
 
