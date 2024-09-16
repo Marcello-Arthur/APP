@@ -1,5 +1,7 @@
 const {select, input, checkbox} = require ('@inquirer/prompts')
 
+let Mensagem = "Bem vindo ao app de Metas";
+
 let meta = {
     value: "Tomar 3L de agua por dia",
     checked: false,
@@ -10,13 +12,15 @@ let metas = [meta]
 const CadastrarMetas = async () => {
     const meta = await input({message: "Digite a meta:"})
     if (meta.length == 0) {
-        console.log("A meta não pode ser vazia!")
+        Mensagem = "A meta não pode ser vazia!"
         return
     }
 
     metas.push(
         { value: meta, checked: false}
     )
+
+    Mensagem = "Meta Cadastrada"
 }
 
 const ListarMetas = async () => {
@@ -31,7 +35,7 @@ const ListarMetas = async () => {
     })
 
     if (respostas.length == 0) {
-        console.log("Nenhuma meta selecionada!")
+        Mensagem = "Nenhuma meta selecionada!"
         return
     }
     
@@ -43,7 +47,7 @@ const ListarMetas = async () => {
         meta.checked = true
     })
 
-    console.log("Meta(s) concluida(s)! :)")
+    Mensagem = "Meta(s) concluida(s)! :)"
 }
 
 const MetasRealizadas = async () => {
@@ -52,7 +56,7 @@ const MetasRealizadas = async () => {
     })
 
     if (Realizadas.length == 0){
-        console.log (' Não tem metas realizadas :(')
+        Mensagem = ' Não tem metas realizadas :('
         return
     }
 
@@ -68,7 +72,7 @@ const MetasAbertas = async () => {
     })
 
     if (Abertas.length == 0){
-        console.log (' Não existe metas abertas :)')
+        Mensagem = ' Não existe metas abertas :)'
         return
     }
 
@@ -104,8 +108,19 @@ const DeletarMetas = async () => {
     
 }
 
+const MostrarMensagem = () => {
+    console.clear();
+
+    if (Mensagem != "") {
+        console.log(Mensagem)
+        console.log("")
+        Mensagem = ""
+    }
+}
+
 const start = async () => {
     while (true){
+        MostrarMensagem()
 
         const opcao = await select ({
             message: "Menu >",
@@ -141,7 +156,6 @@ const start = async () => {
         switch (opcao) {
             case "cadastrar":
                 await CadastrarMetas()
-                console.log(metas)
                 break
             case "Listar":
                 await ListarMetas()
